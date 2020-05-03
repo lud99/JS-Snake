@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Snake</title>
+	<style>
+		body {
+			background: #191921;
+			color: #fff;
+			font-family: sans-serif;
+			font-size: 1.2em;
+			text-align: center; 
+		}
+		canvas {
+		  	image-rendering: -moz-crisp-edges;
+		 	image-rendering: -webkit-crisp-edges;
+		 	image-rendering: pixelated;
+		 	image-rendering: crisp-edges;
+			border: solid .2em #fff;
+			height: 85vh;
+		}
+	</style>
+
+</head>
+<body>
+	<div id='wrapper' style='text-align:center;'>
+	    <div style='text-align:center;font-size:0.75em' id="buttons">
+	    	Difficulty: 1 = Easy, 2 = Normal, 3 = Hard
+    		<div id = "difficulty" style='margin-left:-20px'></div>
+		</div>
+	    <div style='float:left;width:50%'>
+        Score: <div id = "score"></div>
+    </div>
+    <div style='float:right;width:50%'>
+         High Score: <div id = "highscore"></div>
+    </div>
+	<canvas id="snake" width="272" height="240"></canvas>
+	<script src="snake.js"></script>
+</body>
+</html>
